@@ -1,10 +1,20 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import Header from './Componentes/Header/Header';
+import Footer from './Componentes/Footer/Footer';
 
 function App() {
   return (
     <div>
-      <h1>HOLAAA</h1>
+      <Header />
+      {/* 
+        Hacer router con pages de:
+          <Login /> 
+          <Home />
+          <CargaVentas />
+          <CargaGastos />
+       */}
+      <Footer />
     </div>
     
   );

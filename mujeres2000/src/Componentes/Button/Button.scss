@@ -1,0 +1,12 @@
+@import '../../Services/Variables.scss';
+
+.btn{
+    font-family: $font; 
+    &.naranja{
+        background-color: $btn-naranja;
+    }
+    &.violeta{
+        background-color: $btn-violeta;
+    }
+}
+
