@@ -1,11 +1,24 @@
 import React from 'react';
 import './Card.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrophy} from '@fortawesome/free-solid-svg-icons';
 
-const Card = () => {
+const Card = ({title, numero, faTrophy}) => {
     return (
-        <div className="card">
+        <section className="card">
+           
+            <div className='card-container'>
+                <h3 className='card-h3'>{title}</h3>
+                <h2 className='card-h2'>{numero}</h2>
+                {/* { 
+                    user ? */}
+                <FontAwesomeIcon icon={faTrophy} className='faTrophy' / >
+                    {/* :
+                    null
+                } */}
+            </div>
             
-        </div>
+        </section>
     )
 }
 

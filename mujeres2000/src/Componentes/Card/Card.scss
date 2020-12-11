@@ -1,0 +1,37 @@
+@import '../../Services/Variables.scss';
+.card{
+    align-items:center;
+    background-color:white;
+    border: 1px solid #eeeeee6e;;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.48); 
+    display:flex;
+    font-family: $font;    
+    height: 100px;
+    justify-content:center;
+    // margin: 5px;
+    width:280px;
+    .card-container{
+        align-items: center;
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        .card-h3{
+            color: $btn-violeta;
+            font-weight: 500;
+            font-size: 20px;
+            line-height:24px;
+            margin: 20px;
+        }
+        .card-h2{
+            font-size: 38px;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+        .faTrophy{
+            color: $btn-violeta;
+            font-size: 35px;
+            margin: 10px;
+        }
+    }
+}
