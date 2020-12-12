@@ -4,6 +4,7 @@
     font-family: $font; 
     border-radius: 20px;
     color: white;
+    margin:5px;
     &.naranja{
         background-color: $btn-naranja;
         border: 1px solid $btn-naranja;
@@ -15,7 +16,7 @@
     &.chico{
         width: 95px;
         height: 40px;
-        font-size: 12px;
+        font-size: 13px;
     }
     &.grande{
         width: 188px;
