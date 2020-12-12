@@ -1,4 +1,5 @@
 import React from 'react';
+import InputLogin from '../Componentes/InputLogin/InputLogin';
 
 const Login = () =>{
     return(
@@ -6,8 +7,8 @@ const Login = () =>{
             <img src="" alt="Mujeres2000"/>
             <p>Control de costos y ventas</p>
             <form>
-                <input type="text" placeholder="E-mail"></input>
-                <input type="text" placeholder=""></input>
+                <InputLogin text={"E-mail"}/>
+                <InputLogin text={"Contraseña"}/>
             </form>
         </section>
     )
