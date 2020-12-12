@@ -1,0 +1,28 @@
+.login{
+    height:calc(100vh - 85px);
+    display:flex;
+    //justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    img.login-logo{
+        margin-top:20px;
+        width:194px;
+        height: 134px;
+    }
+    p.login-p{
+        font-size:18px;
+        font-weight:600;
+        color:#464646;
+        margin-bottom: 30px;
+
+    }
+    form{
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .input-login{
+        margin-bottom:35px;
+    }
+}

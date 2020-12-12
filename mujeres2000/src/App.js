@@ -5,12 +5,13 @@ import Footer from './Componentes/Footer/Footer';
 import Card from './Componentes/Card/Card';
 import InputCalendar from './Componentes/InputCalendar/InputCalendar';
 import InputLogin from './Componentes/InputLogin/InputLogin';
+import Login from './Pages/Login';
 
 function App() {
   return (
     <div>
       <Header name="Pepita" />
-      <InputLogin />
+      <Login />
       {/* <Card 
           title='Ganancias'
           numero='$0'
