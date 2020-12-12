@@ -17,6 +17,7 @@ const Login = ({setNameUser, setPassword}) =>{
                 <Link to = '/home'>
                     <Button text="Iniciar sesión" tamaño="grande" color="violeta" />
                 </Link>
+            <a href="#" className="login-registro">Registrarme</a>
                 
             </form>
         </section>

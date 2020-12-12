@@ -9,24 +9,32 @@
 
     img.login-logo{
         margin-top:20px;
-        width:194px;
-        height: 134px;
+        width:180px;
+        height: 110px;
     }
     p.login-p{
-        font-size:18px;
+        font-size:20px;
         font-weight:600;
         color:#464646;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
     }
     form{
         display:flex;
-        justify-content:center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
     .input-login{
         margin-bottom:35px;
     }
+
+    .login-registro{
+        text-decoration: none;
+        color: $btn-violeta;
+        margin-top: 15px;
+    }
+
 }
 
 .home{
