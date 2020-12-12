@@ -1,0 +1,44 @@
+@import '../../Services/Variables.scss';
+.navbar-container{
+    display: flex;
+    width: 170px;
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    justify-content: flex-start;
+    flex-direction: column;
+    top: 55px;
+    .navbar-links{
+        text-decoration: none;
+        color: black;
+        margin-top: 40px;
+        margin-left: 10px;
+        font-family: $font;
+        font-weight: 600;
+        color: #464646;
+    }
+    .navbar-linea{
+        border-bottom: 2px solid #EAEAEA;
+        margin-top: 50px;
+    }
+    .ayuda{
+        margin-top:20px;
+    }
+    .cerrar-sesion{
+        margin-top: 20px;
+    }
+    .navbar-linea2{
+        border-bottom: 2px solid #EAEAEA;
+        margin-top: 200px;
+    }
+    .reporte{ 
+        margin-top: 20px;
+    }
+    .ayuda{ 
+        color: $btn-violeta;
+    }
+    .cerrar-sesion{
+        color: $btn-naranja;
+    }
+}

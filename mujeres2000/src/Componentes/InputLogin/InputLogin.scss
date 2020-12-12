@@ -1,13 +1,15 @@
 @import '../../Services/Variables.scss';
 .input-login{
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
     font-size: 16px;
     text-align:left;
-    color: #BDBDBD;
+    color: #d1cfcf;
     border-width: 2px;
     width: 300px;
-    height: 48px;
+    height: 45px;
     font-family:$font;
+    padding-left: 15px;
+    font-weight: 500;
 }

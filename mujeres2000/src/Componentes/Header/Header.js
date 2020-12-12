@@ -1,21 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import { useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faBars} from '@fortawesome/free-solid-svg-icons';
 import Perfil from '../../Assets/perfil.jpg';
+import NavBar from '../NavBar/NavBar';
 
 const Header = ({nameUser}) => {
+
+    const [displayNavBar, setDisplayNavBar] = useState(false);
+
+    const showNavBar = () => {
+        setDisplayNavBar(!displayNavBar);
+    }
+
     const location = useLocation();
-    console.log(location.pathname);
+
     return (
+        <React.Fragment>
         <header className="header-container">
 
             {
                 nameUser && location.pathname !== '/login' ? 
                     <React.Fragment>
                         <div className='header-bars'>
-                            <FontAwesomeIcon icon={faBars} className='faBars' / >
+                            <button type='button' className='header-button' onClick={showNavBar}>
+                                <FontAwesomeIcon icon={faBars} className='faBars' / >
+                            </button>
+                            
                         </div>
 
                         <div className="header-content">
@@ -27,7 +39,17 @@ const Header = ({nameUser}) => {
                 : 
                 null
             }
+
+            {
+            displayNavBar ? 
+            <NavBar />
+            : 
+            null
+        }
+
         </header>
+      
+        </React.Fragment> 
     )
 }
 

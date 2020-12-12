@@ -1,5 +1,6 @@
 @import '../../Services/Variables.scss';
 .select-container{
+    display:flex;
     align-items:center;
     background-color:white;
     border: 1px solid #eeeeee6e;;
@@ -11,13 +12,36 @@
     width: 220px;
     flex-direction: column;
     justify-content:center;
-    .select-h3{
-        font-size: 14px;
-        font-weight: 600;
-        color: $btn-violeta;
-        display: flex;
+    .select-content{
         align-items: center;
-        flex-direction: column;
+        /* background-color: white; */
+        /* border: 1px solid #eeeeee6e; */
+        /* border-radius: 5px; */
+        /* box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.48); */
+        display: flex;
+        font-family: "Inter", sans-serif;
+        /* height: 70px; */
+        /* width: 220px; */
+        flex-direction: row;
+        justify-content: center;
+        .select-h3{
+            font-size: 14px;
+            font-weight: 600;
+            color: $btn-violeta;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: $font;
+        }
+        .faChevron{ 
+            margin: 5px;
+        }
+    }
+    .select-input{
+        border: none;
+        text-align: center;
         font-family: $font;
+        width: 169px;
+        margin-bottom: 10px;
     }
 }

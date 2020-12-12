@@ -1,5 +1,6 @@
 @import '../../Services/Variables.scss';
 .header-container{
+    // position: fixed;
     align-items: center;
     background-color: $btn-violeta;
     color: white;
@@ -39,4 +40,9 @@
             margin-right: 10px;
         }
     } 
+    .header-button{
+        background: none;
+        border: none;
+        color: white;
+    }
 }
