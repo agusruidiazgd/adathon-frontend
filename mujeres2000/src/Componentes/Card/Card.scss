@@ -1,37 +1,73 @@
 @import '../../Services/Variables.scss';
-.card{
-    align-items:center;
+section.card{
     background-color:white;
     border: 1px solid #eeeeee6e;;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.48); 
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25); 
+    padding:10px;
+    width: 282px;
+    height: 77px;
+    margin: 10px;
     display:flex;
-    font-family: $font;    
-    height: 100px;
-    justify-content:center;
-    // margin: 5px;
-    width:280px;
-    .card-container{
-        align-items: center;
-        display:flex;
-        flex-direction: row;
-        justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    //justify-content:space-between;
+    &.grande{
+        width:100%;
+        height:330px;
+        margin-left:0px;
+        flex-wrap: inherit;
+        //padding-bottom: 25px;
+    }
+    &.ganancias{
+        width: 182px;
+        height:77px ;
+        margin:auto;
+    }
+    &.producto{
+        height: 100px;
+        width:280px;
+        
+    }
         .card-h3{
+            font-family: $font;  
             color: $btn-violeta;
+            font-style: normal;
             font-weight: 500;
-            font-size: 20px;
-            line-height:24px;
-            margin: 20px;
+            font-size: 18px;
+            line-height: 22px;
+            margin:3px;
         }
         .card-h2{
-            font-size: 38px;
+            font-family: Inter;
+            font-style: normal;
             font-weight: 500;
-            margin-left: 15px;
+            font-size: 16px;
+            line-height: 19px;
+            margin:3px;
         }
-        .faTrophy{
-            color: $btn-violeta;
-            font-size: 35px;
-            margin: 10px;
+
+        .card-h3-balance{
+            font-family: $font;  
+            color:rgba(22, 23, 25, 1);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            margin:3px;
+            text-align: center;
+            width:100%;
         }
-    }
+        
+        .card-container{
+            display: flex;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            align-items:center;
+            width:120px;
+            height: 100%;
+            //margin-left: 11px;
+        }
 }
