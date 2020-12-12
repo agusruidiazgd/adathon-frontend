@@ -1,4 +1,12 @@
 @import '../../Services/Variables.scss';
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 55px;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
 .navbar-container{
     display: flex;
     width: 170px;

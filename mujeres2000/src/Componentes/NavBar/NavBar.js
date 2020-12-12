@@ -5,6 +5,9 @@ import './NavBar.scss';
 
 const NavBar = () => { 
     return (
+        <React.Fragment>
+        <div className="overlay"></div>
+        
         <div className='navbar-container'>
             <a href="#" className='navbar-links'>Cargar Producto</a>
             <a href="#" className='navbar-links'>Cargar Costos</a>
@@ -16,6 +19,7 @@ const NavBar = () => {
             <a href="#" className='navbar-links cerrar-sesion'>Cerrar Sesión</a>
 
         </div>
+        </React.Fragment>
 
     )
 }
