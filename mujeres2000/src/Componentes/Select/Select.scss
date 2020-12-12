@@ -1,0 +1,22 @@
+@import '../../Services/Variables.scss';
+.select-container{
+    align-items:center;
+    background-color:white;
+    border: 1px solid #eeeeee6e;;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.48); 
+    display:flex;
+    font-family: $font;    
+    height: 70px;
+    width: 220px;
+    justify-content:center;
+    .label-text{
+        font-size: 14px;
+        font-weight: 600;
+        color: $btn-violeta;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: $font;
+    }
+}
