@@ -13,6 +13,7 @@ const Table = ({productos,costos, titulos}) => {
         <table id='table' className="table-container">
             <thead>
                 <tr className='table-tr'>
+
                     {  
                         titulos.map(item=>{
                             return(
@@ -20,6 +21,7 @@ const Table = ({productos,costos, titulos}) => {
                             )
                         })
                     }
+
                 </tr>
             </thead>
             <tbody>

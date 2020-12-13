@@ -6,6 +6,7 @@ import { faChevronDown, faPencilAlt, faTrash } from '@fortawesome/free-solid-svg
 import Button from '../Componentes/Button/Button';
 import {getData, postData} from '../Services/services';
 
+
 const CargaProductos = () => {
 
     const [productos, setProductos] = useState([]);
@@ -107,7 +108,9 @@ const CargaProductos = () => {
             </div>
 
             <div className="cga-producto-table">
+
                 <Table productos={productos} titulos={tituloTabla}/> 
+
             </div>
 
         </section>
