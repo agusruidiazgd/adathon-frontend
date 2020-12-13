@@ -1,0 +1,69 @@
+@import '../Services/Variables.scss';
+
+.login{
+    height:calc(100vh - 85px);
+    display:flex;
+    //justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    img.login-logo{
+        margin-top:20px;
+        width:180px;
+        height: 110px;
+    }
+    p.login-p{
+        font-size:20px;
+        font-weight:600;
+        color:#464646;
+        margin-bottom: 20px;
+
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .input-login{
+        margin-bottom:35px;
+    }
+
+    .login-registro{
+        text-decoration: none;
+        color: $btn-violeta;
+        margin-top: 15px;
+    }
+
+}
+
+.home{
+    display:flex;
+    //justify-content:center;
+    //align-items:center;
+    flex-direction:column;
+    box-sizing: border-box;
+    padding:25px;
+    h2.home-tittle{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        margin:24px 0 24px 0;
+    }
+}
+
+.card-container-producto{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:90%;
+    margin-left: 11px;
+}
+
+.faTrophy{
+    color: $btn-violeta;
+    font-size: 35px;
+    margin: 10px;
+}

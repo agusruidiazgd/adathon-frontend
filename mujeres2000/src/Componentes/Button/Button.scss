@@ -2,11 +2,26 @@
 
 .btn{
     font-family: $font; 
+    border-radius: 20px;
+    color: white;
+    margin:5px;
     &.naranja{
         background-color: $btn-naranja;
+        border: 1px solid $btn-naranja;
     }
     &.violeta{
         background-color: $btn-violeta;
+        border: 1px solid $btn-violeta;
+    }
+    &.chico{
+        width: 95px;
+        height: 40px;
+        font-size: 13px;
+    }
+    &.grande{
+        width: 188px;
+        height: 50px;
+        font-size: 15px;
     }
 }
 

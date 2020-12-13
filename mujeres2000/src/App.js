@@ -1,20 +1,35 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.scss';
 import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
+import Login from './Pages/Login';
+import Home from './Pages/Home';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
+
 
 function App() {
+
+  const [nameUser, setNameUser] = useState("");
+  const [password,setPassword] = useState("");
+
   return (
     <div>
-      <Header />
-      {/* 
-        Hacer router con pages de:
-          <Login /> 
-          <Home />
-          <CargaVentas />
-          <CargaGastos />
-       */}
-      <Footer />
+      <BrowserRouter>
+      <Header nameUser={nameUser} />
+        <Switch>
+          <Route exact path="/login">
+            <Login setNameUser={setNameUser} setPassword={setPassword} />
+          </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
     
   );
