@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Select from '../Componentes/Select/Select';
 import Card from '../Componentes/Card/Card';
 import Button from '../Componentes/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy} from '@fortawesome/free-solid-svg-icons';
+import {getBalance} from '../Services/services';
 
 const Home = () => {
 
-    const pruebaBalance =
-        {
-            "ganancias": 4000.0,
-            "costosTotales": 1000.0,
-            "totalVentas": 5000.0,
-            "fecha": null
-        }
-    
+    const [balance, setBalance] = useState([]);
+    const [dateBalance, setDateBalance] = useState("2020-12-01");
+
+    useEffect(() => {
+        const promise = getBalance('balance',{ "fecha": dateBalance});
+        promise.then(data => { 
+            setBalance(data);
+            console.log(balance);
+        });
+    }, []);
+
+    console.log(balance);
     return(
         <section className="home">
-            <Select />
+            <Select setDateBalance={setDateBalance} setBalance={setBalance}/>
             <h2 className="home-tittle">Cargá tus productos:</h2>
 
             <section className={`card producto`}>
@@ -31,13 +36,13 @@ const Home = () => {
             <h2 className="home-tittle">Calculá tus costos y ventas:</h2>
 
             <section className={`card grande`}>
-                <Card title="Ganancias" numero={pruebaBalance.ganancias}>
+                <Card title="Ganancias" numero={balance.ganancias}>
                     <FontAwesomeIcon icon={faTrophy} className='faTrophy' / >
                 </Card>
-                <Card title="Costos" numero={pruebaBalance.costosTotales}>
+                <Card title="Costos" numero={balance.costosTotales}>
                     <Button text='Cargar costos' tamaño='chico' color='naranja'/>
                 </Card>
-                <Card title="Ventas" numero={pruebaBalance.totalVentas} >
+                <Card title="Ventas" numero={balance.totalVentas} >
                     <Button text='Cargar ventas' tamaño='chico' color='violeta'/>
                 </Card>
             </section>

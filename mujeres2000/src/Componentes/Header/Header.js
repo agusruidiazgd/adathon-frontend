@@ -45,10 +45,10 @@ const Header = ({nameUser}) => {
             <NavBar showNavBar={showNavBar} />
             : 
             null
-        }
+            }
 
         </header>
-      
+
         </React.Fragment> 
     )
 }

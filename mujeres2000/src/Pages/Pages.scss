@@ -67,3 +67,98 @@
     font-size: 35px;
     margin: 10px;
 }
+.cga-producto-container{
+    .cga-producto-content1{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px;
+            .faChevron{
+                margin-left: 5px;
+            }
+            .cga-producto-h2{
+                font-family: $font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: $btn-violeta;
+                margin-left: 5px;
+            }
+}
+    .cga-producto-content2{
+        font-family: $font;
+            .content2-input{
+                width:150px;
+        }
+            .cga-producto-label{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin-left: 35px;
+                color: $btn-violeta;
+            }
+            .content2-input{
+                border: 1px solid #DBDBDB;
+                border-radius:5px;
+                width:225px;
+                height: 30px;
+            }
+    }
+    .cga-producto-content3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        font-family: $font;
+        margin-top: 30px;
+        .content3-input{
+            border: 1px solid #DBDBDB;
+            border-radius:5px;
+            width:76px;
+            padding:10px;
+            height: 15px;
+        }
+        .cga-producto-label{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-left: 35px;
+            color: $btn-violeta;
+            font-size: 15px;
+        }
+}
+    .cga-producto-content-button{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-right: 50px;
+}
+    .cga-producto-content-lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 20px;
+        .faPencil{
+            color: gray;
+            margin-left: 20px;
+        }
+        .lista-h2{
+            font-family: $font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $btn-violeta;
+            margin-left: 10px;
+        }
+    }
+}
+.cga-ventas-container{
+    .cga-producto-content1{
+        .faTrash{
+            color: gray;
+            // margin-left: 20px;
+        }
+    }
+}
