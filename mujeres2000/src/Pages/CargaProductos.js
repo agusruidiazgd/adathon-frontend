@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faPencilAlt, faTrash } from '@fortawesome/free-solid-svg-icons';
 import Button from '../Componentes/Button/Button';
 
-const CargaProducto = () => {
+
+const CargaProducto = ({producto, concepto, costo, precio}) => {
 
     return(
        
@@ -41,7 +42,7 @@ const CargaProducto = () => {
             </div>
 
             <div className="cga-producto-table">
-                <Table/> 
+                <Table /> 
             </div>
 
         </section>

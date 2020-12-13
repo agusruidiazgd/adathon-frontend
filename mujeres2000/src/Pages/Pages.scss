@@ -155,10 +155,92 @@
     }
 }
 .cga-ventas-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px;
+        p{
+            margin: 0;
+            color: $btn-violeta;
+            font-family: $font;
+        }
     .cga-producto-content1{
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        flex-direction: row;
         .faTrash{
             color: gray;
-            // margin-left: 20px;
+            margin-left: 120px;
+        }
+        .cga-ventas-h2{
+            font-family: $font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $btn-violeta;
+            }
+}
+
+    .cga-ventas-select{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 100%;
+        .select{
+            width: 250px;
+            height: 26px;
+            border: 2px solid #DBDBDB;
+            border-radius: 5px;
+        }
+    }
+    .cga-ventas-fecha{
+        .cga-ventas-input-fecha{
+            border: 2px solid #DBDBDB;
+            border-radius: 5px;
+        }
+    }
+    .cga-ventas-inputs{
+        margin-top: 40px;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-direction: row;
+        .cga-ventas-label{
+        display:flex;
+        flex-direction: column;
+        }
+        .p-precio{
+            margin-top: -18px;
+        }
+        .cga-ventas-input{
+            width:70px;
+            height: 40px;
+            background-color: #DBDBDB;
+            border: none;
+            border-radius: 5px ;
+        }
+    }
+    .cga-producto-content-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .cga-producto-content-lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .faPencil{
+            color: gray;
+            margin-left: 35px;
+        }
+        .lista-h2{
+            font-family: $font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $btn-violeta;
         }
     }
 }

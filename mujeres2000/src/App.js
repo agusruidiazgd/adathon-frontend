@@ -4,7 +4,7 @@ import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
-// import CargaVentas from './Pages/CargaVentas';
+import CargaVentas from './Pages/CargaVentas';
 import {
   BrowserRouter,
   Switch,
@@ -21,7 +21,7 @@ function App() {
     <div>
       <BrowserRouter>
       <Header nameUser={nameUser} />
-      {/* <CargaVentas /> */}
+      <CargaVentas /> 
         <Switch>
           <Route exact path="/login">
             <Login setNameUser={setNameUser} setPassword={setPassword} />
