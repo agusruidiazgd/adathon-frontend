@@ -4,6 +4,8 @@ import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
 import Login from './Pages/Login';
 import Home from './Pages/Home';
+import CargaProductos from './Pages/CargaProductos';
+import CargaGastos from './Pages/CargaGastos';
 // import CargaVentas from './Pages/CargaVentas';
 import {
   BrowserRouter,
@@ -29,9 +31,12 @@ function App() {
           <Route exact path="/home">
             <Home />
           </Route>
-          {/* <Route exact path="/carga-producto">
-            <CargaProducto />
-          </Route> */}
+          <Route exact path="/carga-producto">
+            <CargaProductos />
+          </Route>
+          <Route exact path="/carga-gastos">
+            <CargaGastos />
+          </Route>
           {/* <Route exact path="/carga-ventas">
             <CargaVentas />
           </Route> */}

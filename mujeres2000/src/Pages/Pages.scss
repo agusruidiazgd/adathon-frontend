@@ -108,6 +108,7 @@
     .cga-producto-content3{
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         align-items: center;
         flex-direction: row;
         font-family: $font;
