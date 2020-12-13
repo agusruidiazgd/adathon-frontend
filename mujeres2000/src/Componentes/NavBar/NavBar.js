@@ -8,8 +8,12 @@ const NavBar = ({showNavBar}) => {
         <div className="overlay"></div>
 
         <div className='navbar-container'>
-            <a href="#" className='navbar-links'>Cargar Producto</a>
-            <a href="#" className='navbar-links'>Cargar Costos</a>
+            <Link to = '/carga-producto'>
+                <a href="#" className='navbar-links' onClick={showNavBar}>Cargar Producto</a>
+            </Link>
+            <Link to = '/carga-gastos'>
+                <a href="#" className='navbar-links' onClick={showNavBar}>Cargar Costos</a>
+            </Link>
             <a href="#" className='navbar-links'>Cargar Ventas</a>
             <div className="navbar-linea"></div>
             <a href="#" className='navbar-links reporte'>Ver Reporte</a>
@@ -17,7 +21,7 @@ const NavBar = ({showNavBar}) => {
             <a href="#" className='navbar-links ayuda'>Ayuda</a>
 
             <Link to = '/login'>
-            <a href="#" className='navbar-links cerrar-sesion' onClick={showNavBar}>Cerrar Sesión</a>
+                <a href="#" className='navbar-links cerrar-sesion' onClick={showNavBar}>Cerrar Sesión</a>
             </Link>
 
         </div>
